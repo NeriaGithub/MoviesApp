@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+/// movie screen
 class MoviesVC: UIViewController {
     
     
