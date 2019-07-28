@@ -7,6 +7,7 @@
 //
 
 import Foundation
+
 class DataManager {
     private static var sharedInstance:DataManager?;
     private init(){}

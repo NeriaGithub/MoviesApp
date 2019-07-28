@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fH7-fh-Nbs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fH7-fh-Nbs">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -54,31 +54,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q5G-j7-Km2">
-                                <rect key="frame" x="12.5" y="84" width="350" height="350"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Q5G-j7-Km2" secondAttribute="height" multiplier="1:1" id="SaK-yM-oTZ"/>
-                                    <constraint firstAttribute="width" constant="200" id="Sfn-ES-gOt">
-                                        <variation key="heightClass=compact-widthClass=compact" constant="200"/>
-                                        <variation key="heightClass=regular-widthClass=compact" constant="350"/>
-                                    </constraint>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGZ-gq-eHg">
-                                <rect key="frame" x="3" y="437" width="369" height="227"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rtc-uc-f1k">
+                                <rect key="frame" x="0.0" y="84" width="375" height="563"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q5G-j7-Km2">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="279"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGZ-gq-eHg">
+                                        <rect key="frame" x="0.0" y="284" width="375" height="279"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="vGZ-gq-eHg" firstAttribute="top" secondItem="Q5G-j7-Km2" secondAttribute="bottom" constant="3" id="1ZO-WN-4Te"/>
-                            <constraint firstItem="Een-uT-msW" firstAttribute="bottom" secondItem="vGZ-gq-eHg" secondAttribute="bottom" constant="3" id="dah-wV-gbk"/>
-                            <constraint firstItem="vGZ-gq-eHg" firstAttribute="leading" secondItem="Een-uT-msW" secondAttribute="leading" constant="3" id="n1y-ug-CpR"/>
-                            <constraint firstItem="Een-uT-msW" firstAttribute="trailing" secondItem="vGZ-gq-eHg" secondAttribute="trailing" constant="3" id="nUA-XJ-zRi"/>
-                            <constraint firstItem="Q5G-j7-Km2" firstAttribute="top" secondItem="Een-uT-msW" secondAttribute="top" constant="20" id="oaf-52-hWv"/>
-                            <constraint firstItem="Q5G-j7-Km2" firstAttribute="centerX" secondItem="Een-uT-msW" secondAttribute="centerX" id="rkq-5c-GcL"/>
+                            <constraint firstItem="rtc-uc-f1k" firstAttribute="leading" secondItem="Een-uT-msW" secondAttribute="leading" id="7eG-gs-glF"/>
+                            <constraint firstItem="Een-uT-msW" firstAttribute="trailing" secondItem="rtc-uc-f1k" secondAttribute="trailing" id="Hut-Jh-nFY"/>
+                            <constraint firstItem="rtc-uc-f1k" firstAttribute="top" secondItem="Een-uT-msW" secondAttribute="top" constant="20" id="c2Y-pY-raY"/>
+                            <constraint firstItem="Een-uT-msW" firstAttribute="bottom" secondItem="rtc-uc-f1k" secondAttribute="bottom" constant="20" id="g2e-hA-gy8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Een-uT-msW"/>
                     </view>
@@ -89,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bw1-ea-KkO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1893" y="-593"/>
+            <point key="canvasLocation" x="1892" y="-593.25337331334333"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZpS-c9-MuJ">
